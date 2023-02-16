@@ -11,7 +11,7 @@ Future<Object?> customSigninDialog(BuildContext context,
     transitionDuration: const Duration(milliseconds: 400),
     transitionBuilder: (_, animation, __, child) {
       Tween<Offset> tween;
-      tween = Tween(begin: const Offset(0, -1), end: Offset.zero);
+      tween = Tween(begin: const Offset(0, 1), end: Offset.zero);
       return SlideTransition(
         position: tween.animate(
           CurvedAnimation(parent: animation, curve: Curves.easeInOut),
